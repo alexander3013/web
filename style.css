@@ -416,3 +416,17 @@ footer ul li a:hover {
   font-size: 14px;
 }
 
+.contador-footer {
+  text-align: center;
+  background-color: #222;
+  color: #fff;
+  padding: 12px;
+  font-size: 15px;
+  border-top: 2px solid #ff4b5c;
+}
+
+.contador-footer strong {
+  color: #ff4b5c;
+  font-weight: bold;
+}
+
