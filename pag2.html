@@ -231,9 +231,30 @@
   <div class="barra-footer">
     &copy; Derechos Reservados - 2025 | Instituto San Juan			
   </div>
+  <!-- Contador dentro del pie de página -->
+<div class="contador-footer">
+  <p>👁️ Esta página se ha visitado <strong id="contador">0</strong> veces en este navegador.</p>
+</div>
+
+<!-- Script del contador -->
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    let visitas = localStorage.getItem("contadorVisitas");
+
+    if (!visitas) {
+      visitas = 1;
+    } else {
+      visitas = parseInt(visitas) + 1;
+    }
+
+    localStorage.setItem("contadorVisitas", visitas);
+    document.getElementById("contador").textContent = visitas;
+  });
+</script>
+
 </footer>
-
-
+  
 
 </body>
 </html>
+
